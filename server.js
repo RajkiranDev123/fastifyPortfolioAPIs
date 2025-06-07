@@ -19,10 +19,10 @@ mongoose
 server.register(routes, { prefix: "/api/v1/portfolio" });
 
 const PORT = process.env.PORT || 4000
+const host = ("RENDER" in process.env) ? `0.0.0.0` : `localhost`;
 
 
-
-server.listen({ port: PORT }, (err) => {
+server.listen({host: host, port: PORT }, (err) => {
     if (err) {
         console.log(err)
     } else {
