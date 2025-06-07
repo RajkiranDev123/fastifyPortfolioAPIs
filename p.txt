@@ -1,0 +1,9 @@
+npm i fastify
+
+npm i dotenv
+
+npm i mongoose
+
+npm install --save-dev nodemon 
+
+ npm i @fastify/cors
